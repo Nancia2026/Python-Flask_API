@@ -45,3 +45,19 @@ The API is designed to handle common failures gracefully:
 - 400 Bad Request: Triggered if the JSON body is missing or the title is an empty string.
 - 404 Not Found: Triggered when attempting to update or delete an ID that does not exist.
 - 500 Internal Server Error: Catch-all for database connection issues using try/except blocks.
+
+## Screenshots
+
+### Postman Testing
+Example showing a successful POST request with 201 Created status.
+
+### UI Layout
+Modern, clean interface with empty-state handling.
+
+## Project Preview
+
+### API Validation (Postman)
+![Postman Screenshot](./screenshots/postman_create.png)
+
+### Todo App Interface
+![UI Screenshot](./screenshots/ui_main.png)
