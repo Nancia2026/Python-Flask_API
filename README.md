@@ -28,12 +28,12 @@ The database file (.db) will be automatically generated upon your first successf
 
 ## API Endpoints
 
-|  Method  |     Endpoint     |        Description       |   Status Codes   |
-| -------- | ---------------- | ------------------------ | ---------------- |
-|   GET    |    /api/todos    |      Fetch all tasks     |        200       |
-|   POST   |    /api/todos    |       Create a task      |     201, 400     |
-|   PUT    |  /api/todos/<id> | Update completion status |     200, 404     |
-|   DELETE |  /api/todos/<id> |       Delete a task      |     204, 404     |
+|  Method  |     Endpoint         |        Description       |   Status Codes   |
+| -------- | -------------------- | ------------------------ | ---------------- |
+|   GET    |    /api/todos        |      Fetch all tasks     |        200       |
+|   POST   |    /api/todos        |       Create a task      |     201, 400     |
+|   PUT    |  /api/todos/<id>     | Update completion status |     200, 404     |
+|   DELETE |  /api/todos/<id>     |       Delete a task      |     204, 404     |
 
 Example POST body:
 {
