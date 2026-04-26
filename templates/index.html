@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask REST API Todo App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+     
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manger</h1>
+        <p>Current Backend: <strong>Flask CLean Architecture</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for todo in todos%}
+                <tr>
+                    <td>{{ todo.id }}</td>
+                    <td>{{ todo.title }}</td>
+                    <td>{% if todo.complete %} ✅ {% else %} ⏳ {% endif %}</td>
+                    <td>{{ todo.created_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <hr>
+        <h4>API Endpoints</h4>
+        <ul>
+            <li><a href = "/api/todos">GET /api/todos</a></li>
+        </ul>
+    </div>
+</body>
+</html>
